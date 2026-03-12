@@ -960,6 +960,8 @@ H.make_draw_function = function(indicator, opts)
     virt_text = indicator.virt_text,
     virt_text_win_col = indicator.virt_text_win_col,
     virt_text_pos = 'overlay',
+    ephemeral = true,
+    strict = false
   }
 
   if H.has_wrapped_virt_text and vim.wo.breakindent and vim.wo.showbreak == '' then
